@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/../scripts/notify.sh\" codebase-guide 'session finished its turn (see PROGRESS.md)'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/../scripts/notify.sh\" codebase-guide 'needs your input'"
+          }
+        ]
+      }
+    ]
+  }
+}
